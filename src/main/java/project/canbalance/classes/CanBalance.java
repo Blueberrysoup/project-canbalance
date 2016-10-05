@@ -25,7 +25,7 @@ public class CanBalance {
 	  boolean isSameSum = false;
 
 	  for(int i = 0; i < lastIndex; i++){ 
-	    isSameSum = checkSums(Arrays.copyOfRange(nums,0,i), Arrays.copyOfRange(nums,i+1,lastIndex));
+	    isSameSum = checkSums(Arrays.copyOfRange(nums,0,i+1), Arrays.copyOfRange(nums,i+1,lastIndex+1));
 	    if (isSameSum)
 	      return isSameSum;
 	  }
